@@ -1,0 +1,15 @@
+@import "../../../styles.scss";
+
+$day_2_img_bg: url("../../../assets/images/sunrise.jpg");
+$day_img_bg: url("../../../assets/images/daytime.jpg");
+$night_img_bg: url("../../../assets/images/nighttime.jpg");
+
+#main-screen {
+    background-image: $day_2_img_bg;
+    background-image: linear-gradient( to bottom left, rgba(0, 0, 0, .4) 20%, rgba(0, 0, 0, .5) 100% ), $day_2_img_bg;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    z-index: -1;
+    position: relative;
+}

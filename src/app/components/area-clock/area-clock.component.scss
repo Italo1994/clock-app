@@ -1,0 +1,110 @@
+@import "../../../styles.scss";
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    color: white;
+    height: 100%;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: flex-start;
+
+    p {
+        font-weight: 400;
+        font-family: $opens_font;
+    }
+
+    span {
+        font-weight: $weight_3;
+        font-size: 35px;
+        font-family: $opens_font;
+    }
+}
+
+.daily-text {
+    text-align: justify;
+    max-width: 400px;
+
+    h4 {
+        margin-top: 15px;
+    }
+}
+
+.area-clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.mode {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 40px;
+}
+
+.button-more {
+    display: inline-block;
+    padding: 10px;
+    width: 120px;
+    background-color: rgba(0, 0, 0, .4);
+    color: $main_color_1;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.button-more:hover {
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff;
+    transition: all 1s;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .area-clock {
+        margin-top: 50px;
+    }
+
+    .right-side {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 920px) {
+    .left-side {
+        padding: 35px;
+        span {
+            font-size: 22px;
+        }
+    }
+
+    .special-text {
+        font-size: 70px;
+    }
+}
