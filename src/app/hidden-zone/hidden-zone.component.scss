@@ -1,0 +1,50 @@
+@import "../../styles.scss";
+
+.grid {
+    display: grid;
+}
+
+.tmp-col-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.tmp-row-2 {
+    grid-template-rows: 1fr 1fr;
+}
+
+.col-responsive {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-left: 2px solid #8a8484;
+}
+
+.hidden-zone {
+    width: 100%;
+    height: 300px;
+    background-color: $color_hidden_menu;
+    // opacity: .9;
+    position: absolute;
+    bottom: 0;
+    color: #000;
+    display: none;
+}
+
+.box {
+    width: 400px;
+    padding: 20px;
+}
+
+.text-zone {
+    color: #727070;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: $weight_3;
+}
+
+.title-zone {
+    font-size: 34px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-weight: $weight_2;
+}
